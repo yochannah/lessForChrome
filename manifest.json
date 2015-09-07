@@ -1,0 +1,14 @@
+{
+  "name": "LessForChrome",
+  "description": "Add less to the page - handy test dev extension",
+  "version": "1.0",
+  "permissions": [
+    "activeTab", "tabs", "http://*/*", "https://*/*"
+  ],
+  "browser_action": {
+      "default_title": "Less tweak",
+      "default_icon": "ic_launcher.png",
+      "default_popup": "popup.html"
+  },
+  "manifest_version": 2
+}
