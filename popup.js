@@ -1,7 +1,9 @@
 var insertLess = {
   setHeadScripts : function(css) {
-    chrome.tabs.insertCSS({
-      code: css
+    var processedLess = less.render(css).then(function(output) {
+      chrome.tabs.insertCSS({
+        code: output.css
+      });
     });
   }
 }
